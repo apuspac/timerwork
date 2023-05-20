@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 
-export default function Timer() {
+export default function Timer(props:any) {
   
   //let [WorkTime, setDate] = useState(WorkTime);
   let IdleTime:number = 1000;
-  let WorkTime:number = 3000;
+
   
-  const [seconds, setSecond] = useState(WorkTime);
+  const [seconds, setSecond] = useState(props.workTime);
   
     useEffect(() => {
       if (seconds > 0) {

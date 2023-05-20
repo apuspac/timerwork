@@ -35,10 +35,14 @@
 }
 
 .main button {
-  font-size: 200px;
+  margin: 10px auto;
+  font-size: 100px;
   padding: 10px;
   background-color: black;
   color: white;
+}
+.main input {
+  font-size: 20px;
 }
 .code {
   font-weight: 700;
